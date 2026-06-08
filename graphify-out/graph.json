@@ -1,0 +1,156 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "EurekaServerApplication.java",
+      "file_type": "code",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L1",
+      "id": "eureka_server_eurekaserverapplication",
+      "community": 0,
+      "norm_label": "eurekaserverapplication.java"
+    },
+    {
+      "label": "EurekaServerApplication",
+      "file_type": "code",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L7",
+      "id": "eureka_server_eurekaserverapplication_eurekaserverapplication",
+      "community": 0,
+      "norm_label": "eurekaserverapplication"
+    },
+    {
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L11",
+      "id": "eureka_server_eurekaserverapplication_eurekaserverapplication_main",
+      "community": 0,
+      "norm_label": ".main()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L11",
+      "id": "string",
+      "community": 0,
+      "norm_label": "string"
+    },
+    {
+      "label": "EurekaServerApplicationTests.java",
+      "file_type": "code",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L1",
+      "id": "eureka_server_eurekaserverapplicationtests",
+      "community": 1,
+      "norm_label": "eurekaserverapplicationtests.java"
+    },
+    {
+      "label": "EurekaServerApplicationTests",
+      "file_type": "code",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L6",
+      "id": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests",
+      "community": 1,
+      "norm_label": "eurekaserverapplicationtests"
+    },
+    {
+      "label": ".contextLoads()",
+      "file_type": "code",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L9",
+      "id": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests_contextloads",
+      "community": 1,
+      "norm_label": ".contextloads()"
+    },
+    {
+      "label": "Test",
+      "file_type": "code",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L9",
+      "id": "test",
+      "community": 1,
+      "norm_label": "test"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "eureka_server_eurekaserverapplication",
+      "target": "eureka_server_eurekaserverapplication_eurekaserverapplication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "eureka_server_eurekaserverapplication_eurekaserverapplication",
+      "target": "eureka_server_eurekaserverapplication_eurekaserverapplication_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/es/jastxz/eureka_server/EurekaServerApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "eureka_server_eurekaserverapplication_eurekaserverapplication_main",
+      "target": "string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "eureka_server_eurekaserverapplicationtests",
+      "target": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "eureka_server_eurekaserverapplicationtests",
+      "target": "test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests",
+      "target": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests_contextloads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/test/java/org/javig/eureka_server/EurekaServerApplicationTests.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "eureka_server_eurekaserverapplicationtests_eurekaserverapplicationtests_contextloads",
+      "target": "test",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "7f9602a750a6b02769c1872b4e1c0a8b7a4bda77"
+}
